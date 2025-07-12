@@ -51,9 +51,9 @@ $(foreach proj,$(ALL_PROJS),$(eval $(call CREATE_PROJ_TARGET,$(proj))))
 XnFormats: XnCore
 XnDDK: XnCore
 XnDDK: XnFormats
-XnLeanDeviceSensorV2: XnDDK
-XnLeanDeviceSensorV2: XnFormats
-XnLeanDeviceSensorV2: XnCore
+XnDeviceSensorV2: XnDDK
+XnDeviceSensorV2: XnFormats
+XnDeviceSensorV2: XnCore
 Utils/XnSensorServer: XnDDK
 Utils/XnSensorServer: XnDeviceSensorV2
 Utils/XnSensorServer: XnFormats
